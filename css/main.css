@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+:root{
+    --pink-color: rgb(112, 185, 189);
+    --blue-color: #1DA1F2;
+}
+body{
+    height: 100vh;
+    background: #26136E;
+    margin: 0;
+    display: grid;
+    font-family: 'Poppins';
+    color: white;
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+
+.section-title{
+    font-size: 3em;
+    margin-top: 65px;
+}
+svg{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: -1;
+    overflow: visible;
+    height: 100vh;
+}
+
+.op-card{
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: left;
+    max-width: 800px;
+}
+
+.op-card-small{
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.pink-text{
+    color: var(--pink-color);
+}
+
+.blue-text{
+    color: var(--blue-color);
+}
+
+.section-header{
+    padding-top: 50px;
+}
+
+/* Navigation Bar */
+.navbar-toggler:focus {
+    outline: none !important;
+}
+
+.navbar-header.col {
+    padding: 0 !important;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.4);
+    padding-right: 16px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .1);
+}
+
+
+.navbar ul.nav li a:hover,
+.navbar ul.nav li a:focus {
+    color: white !important;
+}
+
+.navbar ul.nav li.active a,
+.navbar ul.nav li.active a:hover,
+.navbar ul.nav li.active a:focus {
+    color: rgb(145, 145, 145) !important;
+    background: transparent !important;
+}
+
+.navbar .nav-link {
+    font-size: 18px;
+    padding: 0;
+}
+
+.navbar .nav-item.open>a {
+    background: none !important;
+}
+
+/* Cool Link */
+.cool-link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+@media only screen and (min-width: 572px) {
+    svg{
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: -1;
+        overflow: visible;
+        height: auto;
+    }
+    .container{
+        text-align: center;
+        padding-top: 8em;
+        height: 100vh;
+        overflow: initial;
+        position: static;
+    }
+}
+
+/* Landing Page Style */
+#landing{
+    padding-top: 30vh;
+    height: 100vh;
+}
+
+#signature-image{
+    width: 50%;
+    min-width: 350px;
+}
+
+#home-text{
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    font-size:calc(5px + 0.8vw);
+    margin-top: -3%;
+}
+
+.down-arrows{
+    color: white;
+    font-size: 4rem;
+}
+.down-arrows:hover{
+    color: rgb(192, 192, 192);
+    font-size: 4rem;
+}
+
+/* About Me Style */
+#aboutMe{
+    margin-top: 10vh;
+    text-align: center;
+    height: 200vh;
+}
+
+
+@keyframes pop {
+    0% { transform: translate(20%, 0%)  }
+    40% { transform: translate(20%, -20%) scale(1.1, 1.1); }
+    100% { transform: translate(20%, 0%)  }
+}
+
+.down-arrows {
+
+   
+    animation: pop 1.5s infinite;
+}
+
+
+
+
+
+
+/* About Me */
+#aboutMe{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#aboutMe p{
+    margin-bottom: 0;
+}
+
+/* #headShot{
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.24);
+    width: calc(150px + 10vw);
+    margin-bottom: 15px;
+} */
+#headShot{
+    width: 70%;
+}
+
+
+mark{
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.skill-icon{
+    width: 30px;
+}
