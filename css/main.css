@@ -16,7 +16,6 @@ body{
     scroll-behavior: smooth;
 }
 
-
 .section-title{
     font-size: 3em;
     margin-top: 65px;
@@ -91,7 +90,6 @@ svg{
     margin: 10px;
     border-radius: 10px;
 }
-
 
 .navbar ul.nav li a:hover,
 .navbar ul.nav li a:focus {
@@ -217,7 +215,6 @@ mark{
 .skill-icon{
     width: 30px;
 }
-
 
 /* Experience Style */
 .dark {
