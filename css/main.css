@@ -244,10 +244,10 @@ a:hover {
   box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
   border-radius: 10px;
   margin: 0 auto 3rem auto;
-  overflow: hidden;
   position: relative;
   color: #ffffff;
   width: 75%;
+  max-width: 1180px;
   transition: transform .05s; /* Animation */
 }
 .postcard.dark {
@@ -361,8 +361,13 @@ a:hover {
     transition: transform 0.05s ease;
   }
   .postcard .postcard__text {
-    padding: 3.4rem 0 3.4rem 3.4rem;
     width: 100%;
+  }
+  .postcard .postcard__text-left {
+    padding: 3.4rem 0 3.4rem 3.4rem;
+  }
+  .postcard .postcard__text-right {
+    padding: 3.4rem 3.4rem 3.4rem 0;
   }
   .postcard .media.postcard__text:before {
     content: "";
@@ -506,15 +511,15 @@ a:hover {
   }
 
   .blue::before {
-    background: linear-gradient(209.21deg, rgb(0, 6, 149) 13.57%, rgb(116, 69, 154) 98.38%);
+    background: linear-gradient(209.21deg, rgb(26, 32, 209) 13.57%, rgb(135, 74, 185) 98.38%);
   }
 
   .blue:nth-child(2n)::before {
-    background: linear-gradient(209.21deg, rgb(0, 6, 149) 13.57%, rgb(116, 69, 154) 98.38%);
+    background: linear-gradient(209.21deg, rgb(26, 32, 209) 13.57%, rgb(135, 74, 185) 98.38%);
   }
 
   .red::before {
-    background: linear-gradient(240deg, rgb(87, 15, 141) 13.57%, rgb(243, 91, 160) 98.38%);
+    background: linear-gradient(09.21deg, rgb(87, 15, 141) 13.57%, rgb(243, 91, 160) 98.38%);
   }
 
   .red:nth-child(2n)::before {
