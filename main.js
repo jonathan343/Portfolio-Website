@@ -12,8 +12,10 @@ setTimeout(function() {
 
 setTimeout(function() {
     fade2();
-    document.querySelector('.loading-screen').style.display = "none";
 }, 2600);
+setTimeout(function() {
+    document.querySelector('.loading-screen').style.display = "none";
+}, 3400);
 
 
 function fade1() {
@@ -43,7 +45,7 @@ function fade2() {
         loading_screen.style.opacity = i / 10.0;
         i--;
         }
-    }, 40);
+    }, 70);
     };
 // Also can pass in optional settings block
 var rellax = new Rellax('.rellax', {
