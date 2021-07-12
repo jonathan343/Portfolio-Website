@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
 </head>
 <body>
@@ -196,7 +198,7 @@
     <!-- About Me -->
     <div class="container-fluid" id="aboutMe">
         <div class="row align-items-center">
-            <div class="col-md-5 align-self-center">
+            <div class="col-md-5 align-self-center" data-aos="fade-right" data-aos-duration="1000">
                 <div class="row justify-content-center align-items-start">
                     <img src="assets/testing.svg" alt="" id="headShot">
                 </div>
@@ -204,9 +206,9 @@
                     <h1 class="text-white" style="margin-top: 10px;">Jonathan Gaytan</h1>
                 </div>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-7" data-aos="fade-left" data-aos-duration="1000">
                 <div class="row">
-                    <div class="op-card" >
+                    <div class="op-card">
                         <h3 class="bold">About Me</h3>
                         <p>I'm currently a Computer Science student at Texas A&M University who's dedicated to sharing my coding knowledge 
                             and experience with younger peers. My goal is to create inclusive software that empowers people of all backgrounds. 
@@ -234,11 +236,11 @@
     <!-- Experience -->
     <div class="container-fluid" id="experience">
         <div class="row">
-            <div class="col text-center text-white mb-4 section-title">
+            <div class="col text-center text-white mb-4 section-title" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Experience</h1>
             </div>
         </div>
-
+        <div data-aos="fade-up" data-aos-duration="1500">
         <article class="postcard dark blue" data-tilt data-tilt-scale="0.95" data-tilt-startY="40" data-tilt-perspective="1000">
             <a class="postcard__img_link" href="#">
                 <img class="postcard__img" src="assets/amazon-navy.png" alt="Image Title" />
@@ -262,7 +264,9 @@
                 </ul>
             </div>
         </article>
+        </div>
 
+        <div data-aos="fade-up" data-aos-duration="1500">
         <article class="postcard dark green" data-tilt data-tilt-scale="0.95" data-tilt-startY="40" data-tilt-perspective="1000">
 			<a class="postcard__img_link" href="#">
 				<img class="postcard__img" src="assets/SHPE_Logo.png" alt="Image Title" />	
@@ -285,8 +289,10 @@
 				</ul>
 			</div>
 		</article>
+        </div>
 
-        <article class="postcard dark red" data-tilt data-tilt-scale="0.95" data-tilt-startY="40" data-tilt-perspective="2000">
+        <div data-aos="fade-up" data-aos-duration="1500">
+        <article class="postcard dark red" data-tilt data-tilt-scale="0.95" data-tilt-startY="40" data-tilt-perspective="1000">
 			<a class="postcard__img_link" href="#">
 				<img class="postcard__img" src="assets/tamu_square.png" alt="Image Title" />
 			</a>
@@ -309,12 +315,13 @@
 				</ul>
 			</div>
 		</article>
+        </div>
     </div>
 
     <!-- Projects -->
     <div class="container-fluid" id="projects">
         <div class="row">
-            <div class="col text-center text-white mb-4 section-title">
+            <div class="col text-center text-white mb-4 section-title" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Projects</h1>
             </div>
         </div>
@@ -329,18 +336,18 @@
     </div>
 
     <!-- Quote -->
-    <!-- <div class="container-fluid" id="quote">
+    <div class="container-fluid" id="quote" data-aos="zoom-in" data-aos-duration="1000">
         <div class="row">
-            <div class="col text-center text-white mb-4 section-title">
-                <h1>Quote</h1>
-                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus numquam excepturi laboriosam consequatur impedit!"</p>
+            <div class="col text-center text-white mb-4 section-title quote-div">
+                <p class="quote-text" style="opacity: 50%;">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus numquam excepturi laboriosam consequatur impedit!"</p>
+                <!-- <p style="opacity: 80%;margin-left: 20%;">- John Doe</p> -->
             </div>
         </div>
-    </div> -->
-
+    </div>
+    
     <!-- Contact Me -->
     <section id="contact-me" class="contact">
-        <div class="social-menu">
+        <div class="social-menu" data-aos="fade-up" data-aos-duration="1000">
           <h1>Contact Me</h1>
           <ul>
             <li><a target="_blank" href="https://github.com/jonathan343"><i class="fa fa-github"></i></a></li>
@@ -354,7 +361,10 @@
 
     <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="main.js"></script>

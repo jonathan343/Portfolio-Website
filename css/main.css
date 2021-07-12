@@ -14,7 +14,7 @@ body{
 }
 
 *{
-    scroll-behavior: smooth;
+    
 }
 
 .section-title{
@@ -674,3 +674,20 @@ svg.active .svg-elem-2 {
 .rails-icon{width: 30px; height: 30px;}
 .numpy-icon{width: 22px; height: 22px;}
 .plot-icon{width: 22px; height: 22px;}
+
+.quote-text{
+  font-size: 2rem;
+}
+.quote-div{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+@media screen and (min-width: 769px) {
+  .quote-text{
+    font-size: 3rem;
+  }
+  .quote-div{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
