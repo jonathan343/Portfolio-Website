@@ -242,7 +242,6 @@ a:hover {
   color: #ffffff;
   width: 85%;
   max-width: 1180px;
-  transition: transform .05s; /* Animation */
 }
 .postcard.dark {
   background-color: #18151f;
@@ -298,7 +297,7 @@ a:hover {
 }
 .postcard .postcard__tagbox {
   flex-flow: row wrap;
-  font-size: 14px;
+  font-size: 16px;
   margin: 20px 0 0 0;
   padding: 0;
   justify-content: center;
@@ -312,7 +311,7 @@ a:hover {
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   border-radius: 5px;
-  padding: 2.5px 10px;
+  padding: 4.5px 10px;
   margin: 5px 5px 5px 5px;
   cursor: default;
   user-select: none;
@@ -337,9 +336,7 @@ a:hover {
 .postcard:hover .postcard__bar {
   width: 100px;
 }
-.postcard:hover{
-    transform: scale(1.03);
-}
+
 
 @media screen and (min-width: 769px) {
   .postcard {
@@ -356,7 +353,6 @@ a:hover {
   .postcard .postcard__img {
     max-width: 400px;
     max-height: 100%;
-    transition: transform 0.05s ease;
   }
   .postcard .postcard__text {
     width: 100%;
@@ -376,9 +372,9 @@ a:hover {
     height: 130%;
     width: 55px;
   }
-  .postcard:hover .postcard__img {
+  /* .postcard:hover .postcard__img {
     transform: scale(1.03);
-  }
+  } */
   .postcard:nth-child(2n+1) {
     flex-direction: row;
   }
@@ -659,3 +655,21 @@ svg.active .svg-elem-2 {
   align-items: center;
   z-index: 10000;
 }
+
+.iconify {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+.ts-icon{
+  width: 20px;
+  height: 20px;
+}
+.aws-icon{
+  width: 26px;
+  height: 26px;
+}
+.js-icon{width: 26px; height: 26px;}
+.rails-icon{width: 30px; height: 30px;}
+.numpy-icon{width: 22px; height: 22px;}
+.plot-icon{width: 22px; height: 22px;}
