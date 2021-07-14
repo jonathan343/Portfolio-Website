@@ -186,9 +186,8 @@ body{
 #aboutMe{
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    margin-top: 10vh;
+    padding-top: 75px;
+    padding-bottom: 75px;
     margin-bottom: 10vh;
     text-align: center;
 }
@@ -674,6 +673,11 @@ svg.active .svg-elem-2 {
 
 .quote-text{
   font-size: 2rem;
+  font-weight: bolder;
+  opacity: 90%;
+  background: -webkit-linear-gradient(0deg, #00DBDE 0%, #FC00FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .quote-div{
   margin-left: 15px;
@@ -684,7 +688,7 @@ svg.active .svg-elem-2 {
     font-size: 3rem;
   }
   .quote-div{
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
   }
 }
