@@ -717,3 +717,42 @@ svg.active .svg-elem-2 {
 .js-tilt-glare{
   border-radius: 20px;
 }
+.modal{
+  color: #FFFFFF;
+}
+.close{
+  font-size: 35px;
+  color: #FFFFFF;
+  opacity: 1.0;
+}
+.close:hover{
+  color: rgba(0, 0, 0, 0.2);
+}
+.modal-content{
+  transition: transform 0s ease;
+  border-radius: 15px;
+  background: rgba(29, 161, 242, 0.4);
+  /* -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px); */
+}
+.modal-header{
+  border-bottom: 0px;
+}
+.modal-header h5{
+  font-size: 1.75rem;
+}
+.modal-footer{
+  border-top: 0px;
+}
+
+.modal {
+  transition: backdrop-filter 0.3s;
+  backdrop-filter: blur(10px) opacity(0);
+}
+
+.modal.show {
+  backdrop-filter: blur(10px) opacity(1);
+}
+.btn-light:hover{
+  background-color: rgba(255, 255, 255, 0.6);
+}
