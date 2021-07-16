@@ -762,10 +762,12 @@ svg.active .svg-elem-2 {
 .modal {
   transition: backdrop-filter 0.3s;
   backdrop-filter: blur(10px) opacity(0);
+  -webkit-backdrop-filter: blur(10px) opacity(0);
 }
 
 .modal.show {
   backdrop-filter: blur(10px) opacity(1);
+  -webkit-backdrop-filter: blur(10px) opacity(1);
 }
 .btn-light:hover{
   background-color: rgba(255, 255, 255, 0.6);
