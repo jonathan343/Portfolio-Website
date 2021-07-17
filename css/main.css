@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 :root{
-    --pink-color: rgb(112, 185, 189);
-    --blue-color: #1DA1F2;
+  --pink-color: rgb(112, 185, 189);
+  --blue-color: #1DA1F2;
 }
 body{
     height: 100vh;
@@ -507,6 +507,11 @@ a:hover {
   background-image: linear-gradient(30deg, rgba(189, 187, 73, 0.1), transparent 50%);
 }
 
+.loading-svg{
+  width: 55%;
+  height: 55%;
+}
+
 @media screen and (min-width: 769px) {
   .green::before {
     background: linear-gradient(209.21deg, rgb(22, 155, 173) 13.57%, rgb(0, 54, 135) 98.38%);
@@ -538,6 +543,10 @@ a:hover {
 
   .yellow:nth-child(2n)::before {
     background-image: linear-gradient(80deg, rgba(189, 187, 73, 0.1), transparent 50%);
+  }
+  .loading-svg{
+    width: 25%;
+    height: 25%;
   }
 }
 
