@@ -7,7 +7,7 @@ body{
     height: 100vh;
     background: #26136E;
     margin: 0;
-    display: grid;
+    /* display: grid; */
     font-family: 'Poppins';
     color: white;  
     overflow-x: hidden;
@@ -548,6 +548,10 @@ a:hover {
     width: 25%;
     height: 25%;
   }
+  .glass-card{
+    width: 350px;
+    height: 400px;
+  }
 }
 
 
@@ -665,9 +669,9 @@ svg.active .svg-elem-2 {
 }
 
 .loading-screen{
-  width: 100%;
-  height: 100%;
-  position: absolute;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
   top: 0;
   left: 0;
   background-color: #26136E;
@@ -730,8 +734,8 @@ svg.active .svg-elem-2 {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;  /* <- here it is */
-  width: 350px;
-  height: 400px;
+  width: 325px;
+  height: 375px;
   border-radius: 20px;
 }
 /* .glare-btn:hover{

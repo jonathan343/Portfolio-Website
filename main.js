@@ -1,22 +1,9 @@
 var wrapper = document.querySelector('.loading-screen svg')
-// We are only adding and removing the 'active' class,
-// the entire animation is defined in the CSS code
+// // We are only adding and removing the 'active' class,
+// // the entire animation is defined in the CSS code
 function draw() {
   wrapper.classList.add('active')
 }
-// Play draw animation once
-setTimeout(draw, 300)
-setTimeout(function() {
-    fade1();
-  }, 2000);
-
-setTimeout(function() {
-    fade2();
-}, 2600);
-setTimeout(function() {
-    document.querySelector('.loading-screen').style.display = "none";
-}, 3400);
-
 
 function fade1() {
 var i = 10.0;
@@ -47,6 +34,24 @@ function fade2() {
         }
     }, 70);
     };
+$('body').css({
+  overflow: 'hidden',
+});
+setTimeout(draw, 300)
+setTimeout(function() {
+    fade1();
+  }, 2000);
+
+setTimeout(function() {
+    fade2();
+}, 2600);
+setTimeout(function() {
+    document.querySelector('.loading-screen').style.display = "none";
+    $('body').css({
+      overflow: 'auto'
+    });
+}, 3400);
+
 // Also can pass in optional settings block
 var rellax = new Rellax('.rellax', {
     speed: -2,
