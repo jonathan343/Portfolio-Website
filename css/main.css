@@ -4,13 +4,13 @@
   --blue-color: #1DA1F2;
 }
 body{
-    height: 100vh;
+    /* height: 100vh; */
     background: #26136E;
     margin: 0;
     /* display: grid; */
     font-family: 'Poppins';
     color: white;  
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 
