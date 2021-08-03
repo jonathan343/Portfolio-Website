@@ -52,6 +52,15 @@ setTimeout(function() {
     });
 }, 3400);
 
+$(window).resize(function(){
+  if ($(window).width() > 960) {
+    document.getElementById('home-svg').setAttribute("viewBox", "0 0 1440 1024");
+  }
+  else{
+    document.getElementById('home-svg').setAttribute("viewBox", "");
+  }
+});
+
 // Also can pass in optional settings block
 var rellax = new Rellax('.rellax', {
     speed: -2,
