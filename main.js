@@ -52,6 +52,12 @@ setTimeout(function() {
     });
 }, 3400);
 
+if ($(window).width() > 960) {
+  document.getElementById('home-svg').setAttribute("viewBox", "0 0 1440 1024");
+}
+else{
+  document.getElementById('home-svg').setAttribute("viewBox", "");
+}
 $(window).resize(function(){
   if ($(window).width() > 960) {
     document.getElementById('home-svg').setAttribute("viewBox", "0 0 1440 1024");
