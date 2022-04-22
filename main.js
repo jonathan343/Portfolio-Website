@@ -1,43 +1,19 @@
-// left: 37, up: 38, right: 39, down: 40,
-// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
-var keys = {37: 1, 38: 1, 39: 1, 40: 1};
 
-function preventDefault(e) {
-  e.preventDefault();
-}
-
-function preventDefaultForScrollKeys(e) {
-  if (keys[e.keyCode]) {
-    preventDefault(e);
-    return false;
-  }
-}
-
-// modern Chrome requires { passive: false } when adding event
-var supportsPassive = false;
-try {
-  window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
-    get: function () { supportsPassive = true; } 
-  }));
-} catch(e) {}
-
-var wheelOpt = supportsPassive ? { passive: false } : false;
-var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
-
-// call this to Disable
 function disableScroll() {
-  window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
-  window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
-  window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
-  window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+  // Get the current page scroll position
+  scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+
+      // if any scroll is attempted, set this to the previous value
+      window.onscroll = function() {
+          window.scrollTo(scrollLeft, scrollTop);
+      };
+  console.log("DISABLE SCROLL");
 }
 
-// call this to Enable
 function enableScroll() {
-  window.removeEventListener('DOMMouseScroll', preventDefault, false);
-  window.removeEventListener(wheelEvent, preventDefault, wheelOpt); 
-  window.removeEventListener('touchmove', preventDefault, wheelOpt);
-  window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+  window.onscroll = function() {};
+  console.log("ENABLE SCROLL");
 }
 
 
@@ -84,10 +60,9 @@ function fade2() {
     };
 $('body').css({
   overflow: 'hidden',
-  display: 'none',
 });
 
-// disableScroll();
+disableScroll();
 setTimeout(draw, 300)
 setTimeout(function() {
     fade1();
@@ -95,6 +70,8 @@ setTimeout(function() {
 
 setTimeout(function() {
     fade2();
+    enableScroll();
+    window.scrollTo(0,0);
 }, 2600);
 setTimeout(function() {
     document.querySelector('.loading-screen').style.display = "none";
@@ -102,10 +79,7 @@ setTimeout(function() {
       overflow: 'auto'
     });
 }, 3400);
-// enableScroll();
-$('body').css({
-  display: 'block',
-});
+
 
 if ($(window).width() > 960) {
   document.getElementById('home-svg').setAttribute("viewBox", "0 0 1440 1024");
