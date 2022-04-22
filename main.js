@@ -84,9 +84,10 @@ function fade2() {
     };
 $('body').css({
   overflow: 'hidden',
+  display: 'none',
 });
 
-disableScroll();
+// disableScroll();
 setTimeout(draw, 300)
 setTimeout(function() {
     fade1();
@@ -101,7 +102,10 @@ setTimeout(function() {
       overflow: 'auto'
     });
 }, 3400);
-enableScroll();
+// enableScroll();
+$('body').css({
+  display: 'block',
+});
 
 if ($(window).width() > 960) {
   document.getElementById('home-svg').setAttribute("viewBox", "0 0 1440 1024");
