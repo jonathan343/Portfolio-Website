@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 :root{
   --pink-color: rgb(112, 185, 189);
   --blue-color: #1DA1F2;
@@ -8,7 +9,7 @@ body{
     background: #26136E;
     margin: 0;
     /* display: grid; */
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     color: white;  
     overflow-x: hidden !important;
 }
@@ -787,4 +788,30 @@ svg.active .svg-elem-2 {
 }
 .modal-content,.modal-footer,.modal-header{
   padding: 1.3rem;
+}
+
+.magenta-link{
+  color: rgb(255, 112, 177) !important;
+  font-size: 19px;
+  font-weight: 600 !important;
+  display: inline-block;
+  position: relative;
+}
+
+.magenta-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2.5px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 112, 177);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.magenta-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
