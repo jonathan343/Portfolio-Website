@@ -709,8 +709,9 @@ svg.active .svg-elem-2 {
   -webkit-text-fill-color: transparent;
 }
 .quote-div{
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 1080px;
 }
 @media screen and (min-width: 769px) {
   .quote-text{
@@ -814,6 +815,10 @@ svg.active .svg-elem-2 {
 .magenta-link:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+#projects{
+  max-width: 1500px;
 }
 
 body::-webkit-scrollbar {
