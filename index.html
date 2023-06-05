@@ -402,7 +402,7 @@
             <div class="col-md-7" data-aos="fade-left" data-aos-duration="1750">
                 <div class="row">
                     <div class="op-card">
-                        <h3 class="bold">About Me</h3>
+                        <h4 class="bold">About Me</h4>
                         <p>
                             I'm a <script>document.write(Math.abs(new Date(Date.now() - new Date("08/09/2000").getTime()).getUTCFullYear() - 1970))</script> year old Software Engineer at <a href="https://aws.amazon.com/" target="_blank" class="magenta-link">Amazon Web Services (AWS)</a>, where I work on the <a href="https://aws.amazon.com/sdk-for-python/" target="_blank" class="magenta-link">Python SDK</a> team.
                             I graduated from <a href="https://www.tamu.edu/" target="_blank" class="magenta-link">Texas A&M University</a> with a degree in Computer Science, and while I was there, I helped lead <a href="https://www.tamushpe.org/" target="_blank" class="magenta-link">TAMU SHPE</a> by implementing new software and mentoring members of my committee.
@@ -414,7 +414,7 @@
                 </div>
                 <div class="row">
                     <div class="op-card-small">
-                        <h3 class="bold">Top Skills</h3>
+                        <h4 class="bold">Top Skills</h4>
                         <p class="skill-p">
                             <img src="assets/python-icon.png" alt="" class="skill-icon">Python&nbsp;&nbsp;
                             <img src="assets/swift-icon.png" alt="" class="skill-icon">SwiftUI&nbsp;&nbsp;
@@ -530,6 +530,18 @@
         </div>
         <div class="container-fluid">
             <div class="row">
+                <div class="col-sm col-md-6 col-lg-4 my-4" data-aos="zoom-in" data-aos-duration="3000">
+                    <div class="glass-card  text-center py-4 px-2 mx-auto" data-tilt data-tilt-perspective="1750" data-tilt-glare="true" data-tilt-maxGlare="0.65" >
+                        <img  style="width: 70%; border-radius: 10px;" src="assets/Melody.svg" alt="">
+                        <h4 class="mt-3">Melody</h4>
+                        <div class="postcard__subtitle small" style="color:rgba(255,255,255,0.8);">
+                            <time datetime="2020-05-25 12:00:00">
+                                <i class="fa fa-calendar mr-2"></i>July 2022 - Present
+                            </time>
+                        </div>
+                        <button class="btn btn-primary mt-2 glare-btn" data-toggle="modal" data-target="#melodyModal">Read More</button>
+                    </div>
+                </div>
                 <div class="col-sm col-md-6 col-lg-4 my-4" data-aos="zoom-in" data-aos-duration="1000">
                     <div class="glass-card  text-center py-4 px-2 mx-auto" data-tilt data-tilt-perspective="1750" data-tilt-glare="true" data-tilt-maxGlare="0.25">
                         <img  style="width: 70%; border-radius: 10px;" src="assets/SHPE_Logo.png" alt="">
@@ -554,19 +566,6 @@
                         <button class="btn btn-primary mt-2 glare-btn" data-toggle="modal" data-target="#pointAutomationModal">Read More</button>
                     </div>
                 </div>
-                <div class="col-sm col-md-6 col-lg-4 my-4" data-aos="zoom-in" data-aos-duration="3000">
-                    <div class="glass-card  text-center py-4 px-2 mx-auto" data-tilt data-tilt-perspective="1750" data-tilt-glare="true" data-tilt-maxGlare="0.65" >
-                        <img  style="width: 70%; border-radius: 10px;" src="assets/strimi_landing_page.png" alt="">
-                        <h4 class="mt-3">Strimi</h4>
-                        <div class="postcard__subtitle small" style="color:rgba(255,255,255,0.8);">
-                            <time datetime="2020-05-25 12:00:00">
-                                <i class="fa fa-calendar mr-2"></i>August 2019- September 2020
-                            </time>
-                        </div>
-                        <button class="btn btn-primary mt-2 glare-btn" data-toggle="modal" data-target="#strimiModal">Read More</button>
-                    </div>
-                </div>
-
                 <div class="col-sm col-md-6 col-lg-4 my-4" data-aos="zoom-in" data-aos-duration="3000">
                     <div class="glass-card  text-center py-4 px-2 mx-auto" data-tilt data-tilt-perspective="1750" data-tilt-glare="true" data-tilt-maxGlare="0.25">
                         <img  style="width: 70%; border-radius: 10px;" src="assets/web-dev.png" alt="">
@@ -609,6 +608,32 @@
     </div>
 
     <!-- Modals -->
+    <div class="modal fade" id="melodyModal" tabindex="-1" role="dialog" aria-labelledby="melodyModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="melodyModalLabel">Melody</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Melody provides a unique way to help you explore and discover your music taste. With Melody you can view recent stats,
+                        get personalized recommendations, and share your profile with friends! Using ChatGPT, we use AI to teach you more about your favorite artists,
+                         analyze the lyrics of your favorite songs, and find common trends in your favorite music.
+                    </p>
+                    <div class="text-center">
+                        <a target="_blank" href="https://my-melody.io/"><button class="btn btn-primary">Visit Melody</button></a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="modal fade" id="memberPortalModal" tabindex="-1" role="dialog" aria-labelledby="memberPortalModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -620,8 +645,8 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    MemberSHPE Portal is a mobile-friendly website that allows current SHPE members, alumni, and recruiters to create a
-                    profile that helps develop and expand their network. My team and I created an admin system that uses an approval process
+                    MemberSHPE Portal is a mobile-friendly website that allows current SHPE members, alumni, and recruiters to create a 
+                    profile that helps develop and expand their network. My team and I created an admin system that uses an approval process 
                     to provide users a secure platform for storing and sharing personal information.
                 </div>
                 <div class="modal-footer">
@@ -641,34 +666,12 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    As a summer project I created a point automation system that was implemented into a preexisting method that used
-                    Google Sheets. I utilized Google App Scripts and created a system that would read student data from event forms and
-                    add it to a monthly sheet that has their points from events of that month. Members are also added to a master point
-                    sheet where their overall points are displayed from all months. New members are sent custom/automated emails with
-                    information about the organization. More than 90% of the entire process is automated reducing the work of our Secretary
+                    As a summer project I created a point automation system that was implemented into a preexisting method that used 
+                    Google Sheets. I utilized Google App Scripts and created a system that would read student data from event forms and 
+                    add it to a monthly sheet that has their points from events of that month. Members are also added to a master point 
+                    sheet where their overall points are displayed from all months. New members are sent custom/automated emails with 
+                    information about the organization. More than 90% of the entire process is automated reducing the work of our Secretary 
                     Committee by up to 84%.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="strimiModal" tabindex="-1" role="dialog" aria-labelledby="strimiModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="strimiModalLabel">Strimi</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    Strimi is a new way to discover and explore new music, movies, and tv shows. This platform allows users to freely
-                    express their opinions and preferences with friends through the use of reviews, likes, and dislikes. Users are provided
-                    with relevent information such as movie trailers, descriptions, and Spotify links to stream music. Strimi began as a class
-                    project, but after developing a passion, my team and I continue to improve the design and functionality on our free time.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>

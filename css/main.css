@@ -29,8 +29,8 @@ body{
 }
 
 .op-card{
-    /* background: rgba(0, 0, 0, 0.4); */
-    background: rgba(29, 161, 242, 0.4);
+    background: rgb(107 107 169 / 60%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 40px 80px, rgba(255, 255, 255, 0.15) 0px 0px 0px 0.5px inset;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     padding: 20px 40px;
@@ -41,7 +41,8 @@ body{
 }
 
 .op-card-small{
-    background: rgba(29, 161, 242, 0.4);
+    background: rgb(107 107 169 / 60%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 40px 80px, rgba(255, 255, 255, 0.15) 0px 0px 0px 0.5px inset;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     padding: 20px 40px;
@@ -76,12 +77,11 @@ body{
 }
 
 .navbar {
-
-    background: rgba(29, 161, 242, 0.4);
+    background: rgb(107 107 169 / 60%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 40px 80px, rgba(255, 255, 255, 0.15) 0px 0px 0px 0.5px inset;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     padding-right: 16px;
-    box-shadow: 0 0 4px rgba(0, 0, 0, .1);
     margin: 10px;
     border-radius: 10px;
 }
@@ -732,10 +732,10 @@ svg.active .svg-elem-2 {
   /* linear-gradient(160deg, #0093E9 0%, #80D0C7 100%) */
 
   /* linear-gradient(168deg, #21D4FD 0%, #B721FF 100%) */
-  background-image: linear-gradient(327deg, #21D4FD 0%, #B721FF 100%);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;  /* <- here it is */
+  background: rgb(107 107 169 / 60%);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 40px 80px, rgba(255, 255, 255, 0.15) 0px 0px 0px 0.5px inset;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   width: 325px;
   height: 375px;
   border-radius: 20px;
@@ -753,6 +753,7 @@ svg.active .svg-elem-2 {
   font-size: 35px;
   color: #FFFFFF;
   opacity: 1.0;
+  font-weight: 500;
 }
 .close:hover{
   color: rgba(0, 0, 0, 0.2);
@@ -760,9 +761,10 @@ svg.active .svg-elem-2 {
 .modal-content{
   transition: transform 0s ease;
   border-radius: 15px;
-  background: rgba(29, 161, 242, 0.4);
-  /* -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px); */
+  background: rgba(63, 63, 106, 0.8);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 40px 80px, rgba(255, 255, 255, 0.15) 0px 0px 0px 0.5px inset;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 .modal-header{
   border-bottom: 0px;
